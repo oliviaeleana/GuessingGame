@@ -6,7 +6,24 @@ namespace GuessingGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Guess a Number");
+
+            string guessedNumber = Console.ReadLine();
+
+            bool userGuessedCorrect = guessedNumber.Equals("7");
+
+            if (userGuessedCorrect)
+            {
+                Console.WriteLine("You Won");
+            }
+            else
+            {
+                Console.WriteLine("You Lost");
+            }
+
+
+
+        
         }
     }
 }
